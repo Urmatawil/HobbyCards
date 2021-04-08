@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Kiwi Maru", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	background-color: #eee;
+}
+
+.container {
+	display: flex;
+	height: 90%;
+	width: 90vw;
+}
+
+.list {
+	margin-bottom: 20px;
+}
+
+.list h2 {
+	text-align: center;
+	font-size: 48px;
+	color: ##111;
+}
+
+.panel {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 50vh;
+	border-radius: 50px;
+	color: #eee;
+	cursor: pointer;
+	flex: 0.5;
+	margin: 10px;
+	transition: flex 0.4s ease-in 0.1s;
+	opacity: 0.5;
+}
+
+.panel h3 {
+	font-size: 32px;
+	position: relative;
+	bottom: -25px;
+	left: 5%;
+	margin: 0;
+	opacity: 0;
+}
+
+.panel.active {
+	flex: 5;
+	opacity: 1;
+	box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.4);
+	color: #fff;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	transition: opacity 0.6s ease-in 0.3s;
+}
+
+@media (max-width: 950px) {
+	.container {
+		flex-direction: column;
+		height: 90vh;
+	}
+
+	.list h2 {
+		font-size: 32px;
+	}
+
+	.panel {
+		height: 80%;
+	}
+
+	.panel h3 {
+		font-size: 20px;
+	}
+}
