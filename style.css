@@ -24,7 +24,7 @@ body {
 }
 
 .list {
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 }
 
 .list h2 {
@@ -97,7 +97,11 @@ footer {
 }
 
 i {
-	font-size: 30px;
+	font-size: 26px;
 	color: #222;
 	margin-inline: 4px;
+}
+
+.foot {
+	padding-bottom: 10px;
 }
